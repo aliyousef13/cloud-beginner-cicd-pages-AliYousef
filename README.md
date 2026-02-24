@@ -1,14 +1,19 @@
 # Cloud CI/CD Beginner Assignment
 
-## Live Website (GitHub Pages)
-(ضع الرابط هنا بعد النشر)
+## Project Overview
+This project demonstrates a simple CI/CD pipeline using GitHub Actions and GitHub Pages.
 
-## Project Files
-- index.html
-- style.css
-- script.js
-- .github/workflows/deploy.yml
+## How CI/CD Works in This Project
+Every time I push code to the main branch:
+1. GitHub Actions runs automatically.
+2. It checks that required files exist.
+3. It packages the website.
+4. It deploys the site to GitHub Pages.
 
-## How to open locally
-1. Download/clone the repository.
-2. Open `index.html` in your browser (double click).
+This demonstrates Continuous Integration (automatic checks) and Continuous Deployment (automatic publishing).
+
+## Live Website
+https://username.github.io/cloud-beginner-cicd-pages-AliSharafYousef/
+
+## How to Run Locally
+Open index.html in your browser.
