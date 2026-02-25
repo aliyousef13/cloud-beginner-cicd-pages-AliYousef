@@ -13,7 +13,13 @@ Every time I push code to the main branch:
 This demonstrates Continuous Integration (automatic checks) and Continuous Deployment (automatic publishing).
 
 ## Live Website
-https://username.github.io/cloud-beginner-cicd-pages-AliSharafYousef/
+https://aliyousef13.github.io/cloud-beginner-cicd-pages-AliYousef/
 
 ## How to Run Locally
 Open index.html in your browser.
+
+## Project Files
+- index.html
+- style.css
+- script.js
+- .github/workflows/deploy.yml
