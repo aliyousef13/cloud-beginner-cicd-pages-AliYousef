@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CI/CD Status Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud CI/CD Beginner Assignment</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <main class="wrap">
-    <header class="top">
-      <div>
-        <h1>CI/CD Status</h1>
-        <p class="sub">Auto-deploy on push to main (GitHub Actions → Pages)</p>
-      </div>
-      <button id="mode" class="chip" type="button">Toggle Theme</button>
+  <div class="page">
+    <header class="header">
+      <p class="course-label">Cloud Computing Assignment</p>
+      <h1>Cloud CI/CD Assignment</h1>
+      <p class="subtitle">
+        A simple static website to demonstrate CI/CD using GitHub Actions and GitHub Pages.
+      </p>
     </header>
 
-    <section class="terminal">
-      <div class="row">
-        <span class="label">Student</span>
-        <span class="value">Ali Sharaf Yousef</span>
-      </div>
-      <div class="row">
-        <span class="label">Course</span>
-        <span class="value">Cloud Computing</span>
-      </div>
+    <main class="container">
+      <section class="card">
+        <h2>Student Information</h2>
+        <p><strong>Name:</strong> Ali Sharaf Yousef</p>
+        <p><strong>Course:</strong> Cloud Computing</p>
+      </section>
 
-      <hr class="sep" />
+      <section class="card">
+        <h2>What is CI/CD?</h2>
+        <p>
+          CI/CD stands for Continuous Integration and Continuous Deployment.
+          Continuous Integration means every code change is pushed and checked automatically.
+          This helps detect problems early and keeps the project organized.
+          Continuous Deployment means the latest successful version is published automatically.
+          In cloud systems, CI/CD reduces manual work and makes delivery faster and more reliable.
+        </p>
+      </section>
 
-      <h2>What is CI/CD?</h2>
-      <p class="text">
+      <section class="card">
+        <h2>My Pipeline</h2>
+        <p>
+          When I push my code to the main branch, GitHub Actions starts automatically.
+          First, it checks that the required files exist.
+          Then it prepares the website files and deploys them to GitHub Pages.
+          Finally, the live website is updated with the latest successful version.
+        </p>
+      </section>
 
-        CI/CD stands for Continuous Integration and Continuous Delivery/Deployment.
-        Continuous Integration means every change is frequently merged and automatically checked.
-        This helps detect errors early and keeps the codebase stable.
-        Continuous Delivery/Deployment means the latest successful version is released automatically.
-        In cloud systems, CI/CD speeds up updates and reduces manual work and human mistakes.
-      </p>
+      <section class="card">
+        <h2>Interactive Section</h2>
+        <p>
+          Use the buttons below to test the JavaScript interaction and change the website theme.
+        </p>
 
+        <div class="buttons">
+          <button id="actionBtn">Run Pipeline Event</button>
+          <button id="themeBtn">Change Theme</button>
+        </div>
 
-      <h2>My Pipeline</h2>
-      <p class="text">
-        After I push to the main branch, GitHub Actions runs automatically.
-        It checks that my required files exist, then packages the website and deploys it to GitHub Pages.
-        Finally, my live website updates with the newest changes.
-      </p>
-
-      <hr class="sep" />
-
-      <div class="actions">
-        <button id="run" class="btn" type="button">Run Demo</button>
-        <button id="clear" class="btn ghost" type="button">Clear</button>
-      </div>
-
-      <div class="log">
-        <div class="logTitle">Live Logs</div>
-        <pre id="out">ready...</pre>
-      </div>
-    </section>
-
-    <footer class="foot">
-      <span id="year"></span> • GitHub Pages Demo
-    </footer>
-  </main>
+        <div class="result-box">
+          <p id="message">No action has been triggered yet.</p>
+          <small id="time">Last update: ---</small>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
+
+
+
